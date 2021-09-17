@@ -74,19 +74,28 @@ export const DateTimePickerToolbar: React.FC<ToolbarComponentProps> = ({
             direction={rtl ? 'row-reverse' : 'row'}
           >
             <ToolbarButton
-              variant="h3"
+              variant="h5"
               onClick={() => setOpenView('hours')}
               selected={openView === 'hours'}
               label={utils.getHourText(date, ampm!)}
             />
 
-            <ToolbarText variant="h3" label=":" className={classes.separator} />
+            <ToolbarText variant="h5" label=":" className={classes.separator} />
 
             <ToolbarButton
-              variant="h3"
+              variant="h5"
               onClick={() => setOpenView('minutes')}
               selected={openView === 'minutes'}
               label={utils.getMinuteText(date)}
+            />
+
+            <ToolbarText variant="h5" label=":" className={classes.separator} />
+
+            <ToolbarButton
+              variant="h5"
+              onClick={() => setOpenView('seconds')}
+              selected={openView === 'seconds'}
+              label={utils.getSecondText(date)}
             />
           </Grid>
 
