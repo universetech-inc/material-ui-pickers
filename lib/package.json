@@ -1,6 +1,6 @@
 {
-  "name": "@material-ui/pickers",
-  "version": "3.3.12",
+  "name": "@golden/pickers",
+  "version": "3.3.11",
   "private": true,
   "description": "React components, that implements material design pickers for material-ui v4",
   "main": "./src/index.ts",
@@ -26,6 +26,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/mui-org/material-ui-pickers"
+  },
+  "publishConfig": {
+    "registry": "https://packages.golden168.win"
   },
   "author": {
     "name": "Dmitriy Kovalenko",

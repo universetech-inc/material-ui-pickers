@@ -1,6 +1,6 @@
 {
   "name": "@golden/pickers",
-  "version": "3.3.11",
+  "version": "3.0.0",
   "description": "Material-ui pickers root package",
   "main": "index.js",
   "directories": {
