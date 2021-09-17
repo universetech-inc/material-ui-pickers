@@ -7,6 +7,7 @@
     "doc": "docs",
     "lib": "lib"
   },
+  "private": true,
   "publishConfig": {
     "registry": "https://packages.golden168.win"
   },
