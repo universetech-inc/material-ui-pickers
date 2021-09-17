@@ -1,6 +1,6 @@
 {
   "name": "@golden/pickers",
-  "version": "3.3.12",
+  "version": "3.3.13",
   "private": true,
   "description": "React components, that implements material design pickers for material-ui v4",
   "main": "./src/index.ts",
