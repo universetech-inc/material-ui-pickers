@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import SnoozeIcon from '@material-ui/icons/Snooze';
 import AlarmIcon from '@material-ui/icons/AddAlarm';
 import { IconButton, InputAdornment } from '@material-ui/core';
-import { DateTimePicker, KeyboardDateTimePicker } from '@material-ui/pickers';
+import { DateTimePicker, KeyboardDateTimePicker } from '@golden/pickers';
 
 function CustomDateTimePicker(props) {
   const [clearedDate, handleClearedDateChange] = useState(null);
@@ -42,8 +42,8 @@ function CustomDateTimePicker(props) {
         onError={console.log}
         minDate={new Date('2018-01-01T00:00')}
         format={props.__willBeReplacedGetFormatString({
-          moment: 'YYYY/MM/DD hh:mm A',
-          dateFns: 'yyyy/MM/dd hh:mm a',
+          moment: 'YYYY/MM/DD hh:mm:ss A',
+          dateFns: 'yyyy/MM/dd hh:mm:ss a',
         })}
       />
 
