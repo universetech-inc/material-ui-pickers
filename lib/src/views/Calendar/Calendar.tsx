@@ -216,7 +216,10 @@ export class Calendar extends React.Component<CalendarProps, CalendarState> {
   handleDaySelect = (day: MaterialUiPickersDate, isFinish = true) => {
     const { date, utils } = this.props;
 
-    this.props.onChange(utils.mergeDateAndTime(day, date), isFinish);
+    this.props.onChange(
+      utils.setSeconds(utils.mergeDateAndTime(day, date), utils.getSeconds(date)),
+      isFinish
+    );
   };
 
   moveToDay = (day: MaterialUiPickersDate) => {
