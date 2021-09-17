@@ -63,7 +63,7 @@ describe('e2e - DateTimePicker', () => {
   it('Should change meridiem', () => {
     component
       .find('ToolbarButton')
-      .at(5)
+      .at(6)
       .simulate('click');
 
     clickOKButton(component);
